@@ -12,10 +12,10 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\sass\abstracts\" />
     <Folder Include="wwwroot\sass\views\" />
     <Folder Include="wwwroot\sass\layouts\" />
     <Folder Include="wwwroot\sass\components\" />
-    <Folder Include="wwwroot\sass\base\" />
   </ItemGroup>
 
   <ItemGroup>
