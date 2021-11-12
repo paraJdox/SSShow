@@ -6,4 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\sass\abstracts\" />
+    <Folder Include="wwwroot\sass\views\" />
+    <Folder Include="wwwroot\sass\layouts\" />
+    <Folder Include="wwwroot\sass\components\" />
+    <Folder Include="wwwroot\sass\base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
 </Project>
