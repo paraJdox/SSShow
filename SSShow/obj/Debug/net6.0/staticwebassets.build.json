@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yldpssctoe0Uhi6ywMJy98Cwt01KXPXi+N+R2wte0nY=",
+  "Hash": "Il3t9QiLQLK/DSDORQ23tdCItRBBEzOmGUVAK96cjmI=",
   "Source": "SSShow",
   "BasePath": "_content/SSShow",
   "Mode": "Default",
@@ -202,6 +202,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\NunitoSans\\NunitoSans-Regular.ttf"
+    },
+    {
+      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\img\\logo\\logo-full.svg",
+      "SourceId": "SSShow",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\",
+      "BasePath": "_content/SSShow",
+      "RelativePath": "img/logo/logo-full.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo\\logo-full.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\img\\logo\\logo-min.svg",
+      "SourceId": "SSShow",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\",
+      "BasePath": "_content/SSShow",
+      "RelativePath": "img/logo/logo-min.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo\\logo-min.svg"
     },
     {
       "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\js\\site.js",
