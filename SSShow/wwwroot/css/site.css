@@ -116,3 +116,10 @@ body {
 .logo {
   min-width: 115px;
   max-width: 169px; }
+
+/*##################*/
+/* -  components  - */
+/*##################*/
+.search-bar {
+  width: 50%;
+  max-width: 300px; }

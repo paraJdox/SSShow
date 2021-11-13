@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xS2lS3yc9boWbt3+uMfdZwkxVnaYVKOi1CfERcjXHuE=",
+  "Hash": "6CrJo0NQ7gryUBH6fPZvGvw+Nq1yQ1HMS3LQi1tLmWQ=",
   "Source": "SSShow",
   "BasePath": "_content/SSShow",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sass\\base\\_typography.scss"
+    },
+    {
+      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\components\\_search-bar.scss",
+      "SourceId": "SSShow",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\",
+      "BasePath": "_content/SSShow",
+      "RelativePath": "sass/components/_search-bar.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sass\\components\\_search-bar.scss"
     },
     {
       "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\layouts\\_nav.scss",
