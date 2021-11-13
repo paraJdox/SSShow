@@ -114,4 +114,5 @@ body {
 /* -  layouts  - */
 /*###############*/
 .logo {
-  min-width: 115px; }
+  min-width: 115px;
+  max-width: 169px; }
