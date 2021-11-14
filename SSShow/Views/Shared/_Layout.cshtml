@@ -14,15 +14,17 @@
         @*  nav  *@
         @*#######*@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="containers main-nav">
                 @* logo *@
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/logo/logo-full.svg" class="logo" alt="SSShow" />
+                <a class="logo navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo/logo-full.svg" alt="SSShow" />
                 </a>
 
 
                 @* search bar (visible only below sm screens (xs)) [for mobile design]*@
-                <input type="text" class="form-control d-sm-none search-bar" placeholder="MOBILE" aria-label="Server">
+                @*<input type="text" class="form-control d-sm-none search-bar" placeholder="MOBILE" aria-label="Server">*@
+                <input type="text" class="search-bar form-control" placeholder="MOBILE" aria-label="Server">
+
 
                 @* nav-toggler *@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,7 +33,7 @@
                 </button>
 
                 @* nav-items *@
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-items navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -43,8 +45,7 @@
                 </div>
 
                 @* search bar (visible only above sm screens (md,lg,xl)) [for tab and web design] *@
-                <input type="text" class="form-control d-none d-sm-block search-bar" placeholder="WEB" aria-label="Server">
-
+                @*<input type="text" class="form-control d-none d-sm-block search-bar" placeholder="WEB" aria-label="Server">*@
             </div>
         </nav>
 

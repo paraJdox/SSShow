@@ -1,4 +1,37 @@
-﻿.logo {
-    min-width: 115px;
-    max-width:169px;
+﻿header {
+    .main-nav {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "logo search-bar navbar-toggler ";
+    }
+
+    .logo {
+        grid-area: logo;
+        min-width: 115px;
+        max-width: 169px;
+    }
+
+    .search-bar {
+        grid-area: search-bar;
+    }
+
+    .navbar-toggler {
+        grid-area: navbar-toggler;
+    }
+
+    .navbar-items {
+        grid-area: navbar-items;
+    }
+}
+
+@media (min-width:576px) {
+    header {
+        .main-nav {
+            grid-template-areas: "logo navbar-items search-bar";
+        }
+
+        .containere {
+            border: 1px solid red;
+        }
+    }
 }
