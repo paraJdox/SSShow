@@ -3,6 +3,9 @@
 /*  This is the single file output by Sass. It is intended to ONLY @import other Sass files.  */
 /*                                                                                            */
 /*############################################################################################*/
+/*#################*/
+/* -  abstracts  - */
+/*#################*/
 /*############*/
 /* -  base  - */
 /*############*/
@@ -116,7 +119,7 @@ body {
 header .main-nav {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "logo search-bar navbar-toggler "; }
+  grid-template-areas: "logo search-bar navbar-toggler"; }
 
 header .logo {
   grid-area: logo;

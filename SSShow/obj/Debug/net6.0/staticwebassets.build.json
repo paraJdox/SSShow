@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HlLQ78zQpVkmC3Z9RyF5jcaKQJPH5W7d7XSMVqmppEI=",
+  "Hash": "xIPNYWqVKfrJ/tVZpluLnH+WbMnWphluTpJ1kuBsy1Q=",
   "Source": "SSShow",
   "BasePath": "_content/SSShow",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\abstracts\\_breakpoints.scss",
+      "SourceId": "SSShow",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\",
+      "BasePath": "_content/SSShow",
+      "RelativePath": "sass/abstracts/_breakpoints.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sass\\abstracts\\_breakpoints.scss"
     },
     {
       "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\base\\_font-face.scss",

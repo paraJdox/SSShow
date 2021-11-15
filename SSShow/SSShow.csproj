@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\sass\abstracts\" />
     <Folder Include="wwwroot\sass\views\" />
   </ItemGroup>
 
