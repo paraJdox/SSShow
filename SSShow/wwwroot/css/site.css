@@ -119,11 +119,11 @@ body {
 header .main-nav {
   display: grid;
   gap: 1.2em;
-  grid-template-columns: minmax(115px, 169px) auto 100px;
+  grid-template-columns: minmax(115px, 169px) auto minmax(230px, 300px);
   grid-template-areas: "logo search-bar navbar-toggler";
   padding: 0 12px;
   width: 100%;
-  /*max-width: map-get($breakpoints, small);*/ }
+  /*max-width: map-get($breakpoints, small); minmax(230px, 300px)*/ }
 
 header .logo {
   grid-area: logo;
@@ -142,11 +142,11 @@ header .navbar-items {
 
 @media (min-width: 575px) {
   header .main-nav {
-    grid-template-areas: "logo navbar-items search-bar";
     max-width: 575px; } }
 
 @media (min-width: 768px) {
   header .main-nav {
+    grid-template-areas: "logo navbar-items search-bar";
     max-width: 768px; } }
 
 @media (min-width: 992px) {

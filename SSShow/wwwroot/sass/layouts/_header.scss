@@ -2,11 +2,11 @@
     .main-nav {
         display: grid;
         gap: 1.2em;
-        grid-template-columns: minmax(115px, 169px) auto 100px;
+        grid-template-columns: minmax(115px, 169px) auto minmax(230px, 300px);
         grid-template-areas: "logo search-bar navbar-toggler";
         padding: 0 12px;
         width: 100%;
-        /*max-width: map-get($breakpoints, small);*/
+        /*max-width: map-get($breakpoints, small); minmax(230px, 300px)*/ 
     }
 
     .logo {
@@ -32,7 +32,6 @@
 @media (min-width:map-get($breakpoints, small)) {
     header {
         .main-nav {
-            grid-template-areas: "logo navbar-items search-bar";
             max-width: map-get($breakpoints, small);
         }
     }
@@ -41,6 +40,7 @@
 @media (min-width:map-get($breakpoints, medium)) {
     header {
         .main-nav {
+            grid-template-areas: "logo navbar-items search-bar";
             max-width: map-get($breakpoints, medium);
         }
     }
