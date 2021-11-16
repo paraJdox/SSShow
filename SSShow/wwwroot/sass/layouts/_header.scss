@@ -10,8 +10,8 @@
 
     .logo {
         grid-area: logo;
-        max-height: 22px;
-        min-width: 115px;
+        max-height: 25px;
+        min-width: 118px;
         max-width: 169px;
     }
 
@@ -42,10 +42,10 @@
             grid-template-areas: "logo navbar-items search-bar";
             grid-template-columns: max-content auto minmax(230px, 300px);
             max-width: map-get($breakpoints, medium);
-            
-            .nav-link{
+
+            .nav-link {
                 // to align all nav items to the logo (logo-full.svg)
-                padding-bottom:0;
+                padding-bottom: 0;
             }
         }
     }

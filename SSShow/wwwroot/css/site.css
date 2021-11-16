@@ -126,8 +126,8 @@ header .main-nav {
 
 header .logo {
   grid-area: logo;
-  max-height: 22px;
-  min-width: 115px;
+  max-height: 25px;
+  min-width: 118px;
   max-width: 169px; }
 
 header .search-bar {
