@@ -120,7 +120,7 @@ header .main-nav {
   display: grid;
   gap: 1.2em;
   grid-template-columns: max-content auto minmax(50px, 55px);
-  grid-template-areas: "logo search-bar navbar-toggler";
+  grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
   padding: 0 12px;
   width: 100%; }
 
