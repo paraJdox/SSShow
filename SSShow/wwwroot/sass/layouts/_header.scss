@@ -28,49 +28,49 @@
     }
 }
 
-@media (min-width:map-get($breakpoints, small)) {
-    header {
-        .main-nav {
-            max-width: map-get($breakpoints, small);
+
+///////////////////
+// Media Queries //
+///////////////////
+
+@include screen-size(small) {
+    header .main-nav {
+        max-width: map-get($breakpoints, small);
+    }
+}
+
+@include screen-size(medium) {
+    header .main-nav {
+        grid-template-areas: "logo navbar-items search-bar";
+        grid-template-columns: max-content auto minmax(230px, 300px);
+        max-width: map-get($breakpoints, medium);
+
+        .nav-link {
+            padding-bottom: 0; //to align all nav items to the logo (logo-full.svg)
         }
     }
 }
 
-@media (min-width:map-get($breakpoints, medium)) {
-    header {
-        .main-nav {
-            grid-template-areas: "logo navbar-items search-bar";
-            grid-template-columns: max-content auto minmax(230px, 300px);
-            max-width: map-get($breakpoints, medium);
-
-            .nav-link {
-                // to align all nav items to the logo (logo-full.svg)
-                padding-bottom: 0;
-            }
-        }
+@include screen-size(large) {
+    header .main-nav {
+        max-width: map-get($breakpoints, large);
     }
 }
 
-@media (min-width:map-get($breakpoints, large)) {
-    header {
-        .main-nav {
-            max-width: map-get($breakpoints, large);
-        }
+@include screen-size(large) {
+    header .main-nav {
+        max-width: map-get($breakpoints, large);
     }
 }
 
-@media (min-width:map-get($breakpoints, extra-large)) {
-    header {
-        .main-nav {
-            max-width: map-get($breakpoints, extra-large);
-        }
+@include screen-size(extra-large) {
+    header .main-nav {
+        max-width: map-get($breakpoints, extra-large);
     }
 }
 
-@media (min-width:map-get($breakpoints, extra-extra-large)) {
-    header {
-        .main-nav {
-            max-width: map-get($breakpoints, extra-extra-large);
-        }
+@include screen-size(extra-extra-large) {
+    header .main-nav {
+        max-width: map-get($breakpoints, extra-extra-large);
     }
 }

@@ -155,6 +155,10 @@ header .navbar-items {
   header .main-nav {
     max-width: 992px; } }
 
+@media (min-width: 992px) {
+  header .main-nav {
+    max-width: 992px; } }
+
 @media (min-width: 1200px) {
   header .main-nav {
     max-width: 1200px; } }
