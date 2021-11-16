@@ -42,6 +42,11 @@
             grid-template-areas: "logo navbar-items search-bar";
             grid-template-columns: max-content auto minmax(230px, 300px);
             max-width: map-get($breakpoints, medium);
+            
+            .nav-link{
+                // to align all nav items to the logo (logo-full.svg)
+                padding-bottom:0;
+            }
         }
     }
 }

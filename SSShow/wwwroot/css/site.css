@@ -147,7 +147,9 @@ header .navbar-items {
   header .main-nav {
     grid-template-areas: "logo navbar-items search-bar";
     grid-template-columns: max-content auto minmax(230px, 300px);
-    max-width: 768px; } }
+    max-width: 768px; }
+    header .main-nav .nav-link {
+      padding-bottom: 0; } }
 
 @media (min-width: 992px) {
   header .main-nav {
