@@ -1,13 +1,17 @@
 ﻿header {
     .main-nav {
         display: grid;
-        gap:1.2em;
-        grid-template-columns: auto;
+        gap: 1.2em;
+        grid-template-columns: minmax(115px, 169px) auto 100px;
         grid-template-areas: "logo search-bar navbar-toggler";
+        padding: 0 12px;
+        width: 100%;
+        /*max-width: map-get($breakpoints, small);*/
     }
 
     .logo {
         grid-area: logo;
+        max-height: 22px;
         min-width: 115px;
         max-width: 169px;
     }
@@ -25,14 +29,43 @@
     }
 }
 
-@media (min-width:576px) {
+@media (min-width:map-get($breakpoints, small)) {
     header {
         .main-nav {
             grid-template-areas: "logo navbar-items search-bar";
+            max-width: map-get($breakpoints, small);
         }
+    }
+}
 
-        .containere {
-            border: 1px solid red;
+@media (min-width:map-get($breakpoints, medium)) {
+    header {
+        .main-nav {
+            max-width: map-get($breakpoints, medium);
+        }
+    }
+}
+
+@media (min-width:map-get($breakpoints, large)) {
+    header {
+        .main-nav {
+            max-width: map-get($breakpoints, large);
+        }
+    }
+}
+
+@media (min-width:map-get($breakpoints, extra-large)) {
+    header {
+        .main-nav {
+            max-width: map-get($breakpoints, extra-large);
+        }
+    }
+}
+
+@media (min-width:map-get($breakpoints, extra-extra-large)) {
+    header {
+        .main-nav {
+            max-width: map-get($breakpoints, extra-extra-large);
         }
     }
 }
