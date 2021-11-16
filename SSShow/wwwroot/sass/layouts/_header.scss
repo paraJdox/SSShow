@@ -2,11 +2,10 @@
     .main-nav {
         display: grid;
         gap: 1.2em;
-        grid-template-columns: minmax(115px, 169px) auto minmax(50px,55px);
+        grid-template-columns: max-content auto minmax(50px,55px);
         grid-template-areas: "logo search-bar navbar-toggler";
         padding: 0 12px;
         width: 100%;
-        /*max-width: map-get($breakpoints, small); minmax(230px, 300px)*/ 
     }
 
     .logo {
@@ -41,7 +40,7 @@
     header {
         .main-nav {
             grid-template-areas: "logo navbar-items search-bar";
-            grid-template-columns: minmax(115px, 169px) auto minmax(230px, 300px);
+            grid-template-columns: max-content auto minmax(230px, 300px);
             max-width: map-get($breakpoints, medium);
         }
     }
