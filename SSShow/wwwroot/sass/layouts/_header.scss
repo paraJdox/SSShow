@@ -1,7 +1,7 @@
 ﻿header {
     .main-nav {
         display: grid;
-        column-gap: 1.2em;
+        column-gap: 0.8em;
         grid-template-columns: max-content auto minmax(50px,55px);
         grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
         min-width: 100%;
@@ -59,6 +59,7 @@
 
 @include screen-size(large) {
     header .main-nav {
+        column-gap: 1.2em;
         min-width: container-size(large);
     }
 }
