@@ -4,8 +4,9 @@
         column-gap: 1.2em;
         grid-template-columns: max-content auto minmax(50px,55px);
         grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
+        min-width: 100%;
         padding: 0 12px;
-        width: 100%;
+        border: 1px solid red;
     }
 
     .logo {
@@ -29,13 +30,19 @@
 }
 
 
+// Test selector
+.container {
+    border: 1px solid red;
+}
+
+
 ///////////////////
 // Media Queries //
 ///////////////////
 
 @include screen-size(small) {
     header .main-nav {
-        max-width: map-get($breakpoints, small);
+        min-width: 540px;
     }
 }
 
@@ -43,7 +50,8 @@
     header .main-nav {
         grid-template-areas: "logo navbar-items search-bar";
         grid-template-columns: max-content auto minmax(230px, 300px);
-        max-width: map-get($breakpoints, medium);
+        min-width: 720px;
+
 
         .nav-link {
             padding-bottom: 0; //to align all nav items to the logo (logo-full.svg)
@@ -53,24 +61,18 @@
 
 @include screen-size(large) {
     header .main-nav {
-        max-width: map-get($breakpoints, large);
-    }
-}
-
-@include screen-size(large) {
-    header .main-nav {
-        max-width: map-get($breakpoints, large);
+        min-width: 960px;
     }
 }
 
 @include screen-size(extra-large) {
     header .main-nav {
-        max-width: map-get($breakpoints, extra-large);
+        min-width: 1140px;
     }
 }
 
 @include screen-size(extra-extra-large) {
     header .main-nav {
-        max-width: map-get($breakpoints, extra-extra-large);
+        min-width: 1320px;
     }
 }
