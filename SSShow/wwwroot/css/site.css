@@ -162,7 +162,7 @@ header .navbar-buttons {
 @media (min-width: 768px) {
   header .main-nav {
     grid-template-areas: "logo navbar-items search-bar navbar-buttons";
-    grid-template-columns: max-content auto minmax(230px, 300px);
+    grid-template-columns: max-content auto minmax(230px, 300px) max-content;
     min-width: 720px;
   }
   header .main-nav .nav-link {
