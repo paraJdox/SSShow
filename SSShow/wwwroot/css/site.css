@@ -150,6 +150,9 @@ header .navbar-toggler {
 header .navbar-items {
   grid-area: navbar-items;
 }
+header .navbar-buttons {
+  grid-area: navbar-buttons;
+}
 
 @media (min-width: 575px) {
   header .main-nav {
@@ -158,7 +161,7 @@ header .navbar-items {
 }
 @media (min-width: 768px) {
   header .main-nav {
-    grid-template-areas: "logo navbar-items search-bar";
+    grid-template-areas: "logo navbar-items search-bar navbar-buttons";
     grid-template-columns: max-content auto minmax(230px, 300px);
     min-width: 720px;
   }
