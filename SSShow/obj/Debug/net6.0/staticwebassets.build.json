@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L0NVO0j98ZNKTZW+LmiTceD5HewW0Y2TEFvKNdV4HJY=",
+  "Hash": "PTV35yH59aPHqGPQ0b5uxsS0hfZe1pf/q1vF2hyL7M4=",
   "Source": "SSShow",
   "BasePath": "_content/SSShow",
   "Mode": "Default",
@@ -1241,12 +1241,12 @@
       "OriginalItemSpec": "wwwroot\\sass\\abstracts\\_breakpoints.scss"
     },
     {
-      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\abstracts\\_screen-sizes.scss",
+      "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\abstracts\\_container-sizes.scss",
       "SourceId": "SSShow",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\",
       "BasePath": "_content/SSShow",
-      "RelativePath": "sass/abstracts/_screen-sizes.scss",
+      "RelativePath": "sass/abstracts/_container-sizes.scss",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1255,7 +1255,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sass\\abstracts\\_screen-sizes.scss"
+      "OriginalItemSpec": "wwwroot\\sass\\abstracts\\_container-sizes.scss"
     },
     {
       "Identity": "D:\\Projects\\SSShow\\SSShow Main\\SSShow\\SSShow\\wwwroot\\sass\\base\\_font-face.scss",

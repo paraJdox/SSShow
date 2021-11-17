@@ -134,7 +134,6 @@ header .main-nav {
   grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
   min-width: 100%;
   padding: 0 12px;
-  border: 1px solid red;
 }
 header .logo {
   grid-area: logo;
@@ -150,10 +149,6 @@ header .navbar-toggler {
 }
 header .navbar-items {
   grid-area: navbar-items;
-}
-
-.container {
-  border: 1px solid red;
 }
 
 @media (min-width: 575px) {
