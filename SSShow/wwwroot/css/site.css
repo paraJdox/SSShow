@@ -132,8 +132,8 @@ header .main-nav {
   column-gap: 0.8em;
   grid-template-columns: max-content auto minmax(50px, 55px);
   grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
-  min-width: 100%;
-  padding: 0 12px;
+  width: 100%;
+  border: 1px solid red;
 }
 header .logo {
   grid-area: logo;
@@ -154,16 +154,20 @@ header .navbar-buttons {
   grid-area: navbar-buttons;
 }
 
-@media (min-width: 575px) {
+.container {
+  border: 1px solid red;
+}
+
+@media (min-width: 576px) {
   header .main-nav {
-    min-width: 540px;
+    max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   header .main-nav {
     grid-template-areas: "logo navbar-items search-bar navbar-buttons";
-    grid-template-columns: max-content auto minmax(230px, 300px) max-content;
-    min-width: 720px;
+    grid-template-columns: max-content auto minmax(200px, 300px) max-content;
+    max-width: 720px;
   }
   header .main-nav .nav-link {
     padding-bottom: 0;
@@ -172,17 +176,17 @@ header .navbar-buttons {
 @media (min-width: 992px) {
   header .main-nav {
     column-gap: 1.2em;
-    min-width: 960px;
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
   header .main-nav {
-    min-width: 1140px;
+    max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
   header .main-nav {
-    min-width: 1320px;
+    max-width: 1320px;
   }
 }
 /*##################*/
