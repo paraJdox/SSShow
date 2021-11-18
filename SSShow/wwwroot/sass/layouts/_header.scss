@@ -5,7 +5,6 @@
         grid-template-columns: max-content auto minmax(50px,55px);
         grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
         width: 100%;
-        border: 1px solid red;
     }
 
     .logo {
@@ -32,10 +31,7 @@
     }
 }
 
-//test selector
-.container {
-    border: 1px solid red;
-}
+
 
 ///////////////////
 // Media Queries //
@@ -52,7 +48,7 @@
         //The navbar-toggler will be hidden in medium screen sizes
         grid-template-areas: "logo navbar-items search-bar navbar-buttons";
         grid-template-columns: max-content auto minmax(200px,300px) max-content;
-        max-width: container-size(medium); //issue here
+        max-width: container-size(medium);
 
         .nav-link {
             padding-bottom: 0; //To align all nav items to the logo (logo-full.svg)
