@@ -1,4 +1,8 @@
-﻿/* Box sizing rules */
+﻿/*========
+  Resets
+========*/
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -74,8 +78,4 @@ select {
     }
 }
 
-/********************************************************************************/
-/*                                                                              */
-/*  Source (A Modern CSS Reset):  https://piccalil.li/blog/a-modern-css-reset/  */
-/*                                                                              */
-/********************************************************************************/
+// Source (A Modern CSS Reset):  https://piccalil.li/blog/a-modern-css-reset/

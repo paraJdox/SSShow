@@ -1,14 +1,6 @@
-﻿/*############################################################################################*/
-/*                                                                                            */
-/*  This is the single file output by Sass. It is intended to ONLY @import other Sass files.  */
-/*                                                                                            */
-/*############################################################################################*/
-/*#################*/
-/* -  abstracts  - */
-/*#################*/
-/*############*/
-/* -  base  - */
-/*############*/
+﻿/*============
+  Font-Faces
+============*/
 /*  Nunito  */
 @font-face {
   font-family: "Nunito-Regular";
@@ -41,6 +33,9 @@
   src: url("../sass/~/fonts/NunitoSans/NunitoSans-Black.ttf") format("truetype");
   font-display: swap;
 }
+/*========
+  Resets
+========*/
 /* Box sizing rules */
 *,
 *::before,
@@ -115,18 +110,24 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/********************************************************************************/
-/*                                                                              */
-/*  Source (A Modern CSS Reset):  https://piccalil.li/blog/a-modern-css-reset/  */
-/*                                                                              */
-/********************************************************************************/
+/*============
+  Typography
+============*/
 body {
   font-family: "Nunito-Regular", Nunito;
 }
 
-/*###############*/
-/* -  layouts  - */
-/*###############*/
+/*===========
+  Searchbar
+===========*/
+.search-bar {
+  width: 100%;
+  max-width: 300px;
+}
+
+/*========
+  Header
+========*/
 header .main-nav {
   display: grid;
   column-gap: 0.8em;
@@ -153,6 +154,7 @@ header .navbar-buttons {
   grid-area: navbar-buttons;
 }
 
+/* Header Media Queries */
 @media (min-width: 576px) {
   header .main-nav {
     max-width: 540px;
@@ -183,11 +185,4 @@ header .navbar-buttons {
   header .main-nav {
     max-width: 1320px;
   }
-}
-/*##################*/
-/* -  components  - */
-/*##################*/
-.search-bar {
-  width: 100%;
-  max-width: 300px;
 }

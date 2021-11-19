@@ -1,4 +1,8 @@
-﻿header {
+﻿/*========
+  Header
+========*/
+
+header {
     .main-nav {
         display: grid;
         column-gap: 0.8em;
@@ -32,10 +36,9 @@
 }
 
 
-
-///////////////////
-// Media Queries //
-///////////////////
+//////////////////////////
+/* Header Media Queries */
+//////////////////////////
 
 @include screen-size(small) {
     header .main-nav {
