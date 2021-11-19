@@ -125,6 +125,13 @@ body {
   max-width: 300px;
 }
 
+/*===========
+  Container
+===========*/
+.container {
+  padding: 0 12px;
+}
+
 /*========
   Header
 ========*/
@@ -134,6 +141,7 @@ header .main-nav {
   grid-template-columns: max-content auto minmax(50px, 55px);
   grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
   width: 100%;
+  padding: 0 12px;
 }
 header .logo {
   grid-area: logo;

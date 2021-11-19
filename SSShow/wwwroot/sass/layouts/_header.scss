@@ -9,6 +9,7 @@ header {
         grid-template-columns: max-content auto minmax(50px,55px);
         grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
         width: 100%;
+        padding: $container-padding;
     }
 
     .logo {
@@ -36,9 +37,8 @@ header {
 }
 
 
-//////////////////////////
+
 /* Header Media Queries */
-//////////////////////////
 
 @include screen-size(small) {
     header .main-nav {
