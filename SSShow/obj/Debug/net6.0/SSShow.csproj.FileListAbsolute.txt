@@ -23,3 +23,4 @@ D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\ref\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.pdb
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.genruntimeconfig.cache
+D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.csproj.AssemblyReference.cache
