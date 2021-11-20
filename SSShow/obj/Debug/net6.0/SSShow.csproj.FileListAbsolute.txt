@@ -7,6 +7,7 @@ D:\Projects\SSShow\SSShow Main\SSShow\SSShow\bin\Debug\net6.0\SSShow.runtimeconf
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\bin\Debug\net6.0\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\bin\Debug\net6.0\ref\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\bin\Debug\net6.0\SSShow.pdb
+D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.csproj.AssemblyReference.cache
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.AssemblyInfoInputs.cache
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.AssemblyInfo.cs
@@ -23,4 +24,3 @@ D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\ref\SSShow.dll
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.pdb
 D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.genruntimeconfig.cache
-D:\Projects\SSShow\SSShow Main\SSShow\SSShow\obj\Debug\net6.0\SSShow.csproj.AssemblyReference.cache
