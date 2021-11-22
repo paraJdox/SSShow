@@ -1,10 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 @*test styles*@
 <style>
-    .temp {
+    .test {
         border: 1px solid red;
     }
 
@@ -13,7 +12,7 @@
     }
 </style>
 
-<div class="temp text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="test d-flex flex-column flex-md-row">
+    <h1 class="display-4 flex-grow-1">Welcome</h1>
+    <img class="overflow-hidden w-100" src="~/img/home-hero.svg" alt="Select your SSShow!" />
 </div>
