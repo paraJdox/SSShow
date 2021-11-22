@@ -2,9 +2,17 @@
   Typography
 ============*/
 body {
-    font-family: 'Nunito-Regular', Nunito;
+    font-family: 'Nunito', Nunito;
 }
 
-.text-green{
+.text-green {
     color: color(green);
+}
+
+.text-bold {
+    font-family: "Nunito-Bold", Nunito;
+}
+
+.text-black {
+    font-family: "Nunito-Black", Nunito;
 }
