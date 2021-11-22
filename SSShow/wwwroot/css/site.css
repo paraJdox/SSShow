@@ -117,6 +117,10 @@ body {
   font-family: "Nunito-Regular", Nunito;
 }
 
+.text-green {
+  color: #28A745;
+}
+
 /*===========
   Searchbar
 ===========*/
