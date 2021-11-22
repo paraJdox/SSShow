@@ -206,3 +206,6 @@ header .navbar-buttons {
     max-width: 1320px;
   }
 }
+footer {
+  line-height: 50px;
+}
