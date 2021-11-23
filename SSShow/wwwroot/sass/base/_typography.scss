@@ -17,9 +17,10 @@ body {
     font-family: "Nunito-Black", Nunito;
 }
 
+/*  Home/Index styles  */
 .home-index {
     h1 {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     p {
@@ -35,6 +36,18 @@ body {
 
         p{
             font-size:25px;
+        }
+    }
+}
+
+@include screen-size(extra-extra-large) {
+    .home-index {
+        h1 {
+            font-size: 60px;
+        }
+
+        p{
+            font-size:28px;
         }
     }
 }
