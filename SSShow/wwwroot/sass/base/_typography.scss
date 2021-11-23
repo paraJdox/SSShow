@@ -18,8 +18,12 @@ body {
 }
 
 .home-index {
-    h1{
+    h1 {
         font-size: 38px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }
 
@@ -27,6 +31,10 @@ body {
     .home-index {
         h1 {
             font-size: 45px;
+        }
+
+        p{
+            font-size:25px;
         }
     }
 }
