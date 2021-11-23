@@ -131,26 +131,26 @@ body {
 
 /*  Home/Index styles  */
 .home-index h1 {
-  font-size: 35px;
+  font-size: 2.2rem;
 }
 .home-index p {
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 @media (min-width: 992px) {
   .home-index h1 {
-    font-size: 45px;
+    font-size: 2.85rem;
   }
   .home-index p {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1400px) {
   .home-index h1 {
-    font-size: 60px;
+    font-size: 3.8rem;
   }
   .home-index p {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 }
 /*===========
