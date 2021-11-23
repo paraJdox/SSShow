@@ -133,6 +133,11 @@ body {
   font-size: 38px;
 }
 
+@media (min-width: 992px) {
+  .home-index h1 {
+    font-size: 45px;
+  }
+}
 /*===========
   Searchbar
 ===========*/
