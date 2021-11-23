@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SSShow.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="d-flex flex-column">
     <header>
-        <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom box-shadow mb-3 d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom box-shadow d-flex justify-content-center">
             <div class="main-nav">
                 @*logo*@
                 <a class="d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
@@ -46,13 +46,13 @@
         </nav>
     </header>
 
-    <div class="container g-0">
-        <main role="main" class="pb-3">
+    <div class="container g-0 h-100 flex-grow-1 d-flex align-items-center">
+        <main role="main" class="w-100 my-2">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top text-muted">
         <div class="container g-0">
             &copy; 2021 - SSShow - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

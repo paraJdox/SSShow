@@ -1,0 +1,16 @@
+﻿/*  button with variable(changing) font-size  */
+.btn-var-fs {
+    font-size: 1rem;
+}
+
+@include screen-size(large) {
+    .btn-var-fs {
+        font-size: 1.2rem;
+    }
+}
+
+@include screen-size(extra-extra-large) {
+    .btn-var-fs {
+        font-size: 1.45rem;
+    }
+}

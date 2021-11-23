@@ -4,33 +4,33 @@
 /*  Nunito  */
 @font-face {
   font-family: "Nunito-Regular";
-  src: url("../sass/~/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+  src: url("../../fonts/Nunito/Nunito-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Nunito-Bold";
-  src: url("../sass/~/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+  src: url("../../fonts/Nunito/Nunito-Bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Nunito-Black";
-  src: url("../sass/~/fonts/Nunito/Nunito-Black.ttf") format("truetype");
+  src: url("../../fonts/Nunito/Nunito-Black.ttf") format("truetype");
   font-display: swap;
 }
 /*  Nunito Sans  */
 @font-face {
   font-family: "NunitoSans-Regular";
-  src: url("../sass/~/fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype");
+  src: url("../../fonts/NunitoSans/NunitoSans-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "NunitoSans-Bold";
-  src: url("../sass/~/fonts/NunitoSans/NunitoSans-Bold.ttf") format("truetype");
+  src: url("../../fonts/NunitoSans/NunitoSans-Bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "NunitoSans-Black";
-  src: url("../sass/~/fonts/NunitoSans/NunitoSans-Black.ttf") format("truetype");
+  src: url("../../fonts/NunitoSans/NunitoSans-Black.ttf") format("truetype");
   font-display: swap;
 }
 /*========
@@ -114,9 +114,60 @@ select {
   Typography
 ============*/
 body {
-  font-family: "Nunito-Regular", Nunito;
+  font-family: "Nunito", Nunito;
 }
 
+.text-green {
+  color: #28A745;
+}
+
+.text-fw-bold {
+  font-family: "Nunito-Bold", Nunito;
+}
+
+.text-fw-black {
+  font-family: "Nunito-Black", Nunito;
+}
+
+/*  Home/Index styles  */
+.home-index h1 {
+  font-size: 2.2rem;
+}
+.home-index p {
+  font-size: 1.15rem;
+}
+
+@media (min-width: 992px) {
+  .home-index h1 {
+    font-size: 2.85rem;
+  }
+  .home-index p {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .home-index h1 {
+    font-size: 3.8rem;
+  }
+  .home-index p {
+    font-size: 1.7rem;
+  }
+}
+/*  button with variable(changing) font-size  */
+.btn-var-fs {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .btn-var-fs {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .btn-var-fs {
+    font-size: 1.45rem;
+  }
+}
 /*===========
   Searchbar
 ===========*/
@@ -193,4 +244,7 @@ header .navbar-buttons {
   header .main-nav {
     max-width: 1320px;
   }
+}
+footer {
+  line-height: 50px;
 }

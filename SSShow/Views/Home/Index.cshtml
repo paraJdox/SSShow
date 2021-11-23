@@ -2,7 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="home-index d-flex flex-column flex-md-row mt-3">
+    @*text and button section*@
+    <div class="d-flex flex-column mb-5 mb-md-0 me-md-5">
+        <h1 class="text-fw-black mb-2"><span class="text-success">Seek</span> unlimited shows here and <span class="text-success">Save</span> it into your collections</h1>
+        <p class="mb-4">Create your very own unique collections of movies, animes, TV series, and shows!</p>
+
+        <div role="group" aria-label="Call to Action">
+            @*hide on medium-size screens (and above)*@
+            <button type="button" class="btn btn-outline-success text-nowrap d-md-none me-2 px-4">Sign In</button>
+            <button type="button" class="btn btn-success text-nowrap d-md-none px-4">Sign Up</button>
+
+            @*display on medium-size screens (and above)*@
+            <button type="button" class="btn btn-var-fs btn-success text-nowrap d-none d-md-block px-4">Sign Up Now</button>
+        </div>
+    </div>
+
+    @*page hero image*@
+    <img class="overflow-hidden w-100" src="~/img/home-hero.svg" alt="Select your SSShow!" />
 </div>

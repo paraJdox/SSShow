@@ -3,6 +3,7 @@
 // abstracts
 @import 'abstracts/variables';
 @import 'abstracts/breakpoints';
+@import 'abstracts/colors';
 @import 'abstracts/screen-size';
 @import 'abstracts/container-sizes';
 
@@ -14,9 +15,11 @@
 
 
 // components
+@import 'components/buttons';
 @import 'components/search-bar';
 
 
 // layouts
 @import 'layouts/container';
 @import 'layouts/header';
+@import 'layouts/footer';
