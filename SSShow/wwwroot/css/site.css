@@ -121,11 +121,11 @@ body {
   color: #28A745;
 }
 
-.text-bold {
+.text-fw-bold {
   font-family: "Nunito-Bold", Nunito;
 }
 
-.text-black {
+.text-fw-black {
   font-family: "Nunito-Black", Nunito;
 }
 
