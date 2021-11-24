@@ -1,4 +1,4 @@
-﻿$colors: (green: #28A745);
+﻿$colors: (main-bg: #ECF0F1, green: #28A745);
 
 @function color($color-name) {
     @return map-get($map: $colors, $key: $color-name);
