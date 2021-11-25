@@ -4,4 +4,9 @@
 .search-bar {
     width: 100%;
     max-width: 300px;
+    background-color: color(search-bar-main);
+
+    &:focus {
+        background-color: color(search-bar-focus);
+    }
 }

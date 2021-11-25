@@ -181,6 +181,10 @@ body {
 .search-bar {
   width: 100%;
   max-width: 300px;
+  background-color: #DADADF;
+}
+.search-bar:focus {
+  background-color: #D0D0D0;
 }
 
 /*===========
