@@ -4,9 +4,9 @@ namespace SSShow.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Index()
+        public IActionResult SignUp()
         {
-            return View();
+            return PartialView("_UserModalPartial");
         }
     }
 }
