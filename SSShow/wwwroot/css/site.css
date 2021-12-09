@@ -175,6 +175,16 @@ body {
     font-size: 1.45rem;
   }
 }
+/*========
+  Inputs
+========*/
+.textbox {
+  background: #EEFFF5;
+}
+.textbox:focus {
+  background: #EEFFF5;
+}
+
 /*===========
   Searchbar
 ===========*/
