@@ -7,7 +7,7 @@ $(document).ready(() => {
     /*==================
       Modal Operations
     ==================*/
-    $('button[data-bs-toggle="modal"]').click(function () {
+    $('button[data-target="#user-modal"]').click(function () {
         let newModal = $('#modal-area');
         let url = $(this).data('url');
         let decodedUrl = decodeURIComponent(url);
