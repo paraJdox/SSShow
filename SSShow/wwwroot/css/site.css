@@ -187,10 +187,19 @@ body {
   background-color: #D0D0D0;
 }
 
+/*============
+  Modal Base
+============*/
+.modal-content {
+  border-radius: 30px;
+}
+
+/*============
+  User Modal
+============*/
 .user-modal {
   max-width: 415px;
   padding: 25px 40px 32px 40px;
-  border-radius: 30px;
 }
 
 /*===========
