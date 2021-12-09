@@ -204,6 +204,9 @@ body {
   border-radius: 30px;
   background: #ECF0F1;
 }
+.modal-content .modal-title {
+  font-size: 2.1rem;
+}
 
 /*============
   User Modal
