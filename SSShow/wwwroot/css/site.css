@@ -175,6 +175,16 @@ body {
     font-size: 1.45rem;
   }
 }
+/*========
+  Inputs
+========*/
+.textbox {
+  background: #EEFFF5;
+}
+.textbox:focus {
+  background: #EEFFF5;
+}
+
 /*===========
   Searchbar
 ===========*/
@@ -185,6 +195,29 @@ body {
 }
 .search-bar:focus {
   background-color: #D0D0D0;
+}
+
+/*============
+  Modal Base
+============*/
+.modal-content {
+  border-radius: 30px;
+  background: #ECF0F1;
+}
+.modal-content .modal-title {
+  font-size: 2.1rem;
+}
+.modal-content .btn-close {
+  outline: 2px solid black;
+  border-radius: 50%;
+}
+
+/*============
+  User Modal
+============*/
+.user-modal {
+  max-width: 415px;
+  padding: 25px 40px 32px 40px;
 }
 
 /*===========

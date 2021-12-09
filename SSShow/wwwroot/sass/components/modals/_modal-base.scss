@@ -1,0 +1,17 @@
+﻿/*============
+  Modal Base
+============*/
+
+.modal-content {
+    border-radius: 30px;
+    background: color(main-bg);
+
+    .modal-title {
+        font-size: 2.1rem;
+    }
+
+    .btn-close {
+        outline:2px solid black;
+        border-radius:50%;
+    }
+}
