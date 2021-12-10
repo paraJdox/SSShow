@@ -10,11 +10,18 @@
 
         <div role="group" aria-label="Call to Action">
             @*hide on medium-size screens (and above)*@
-            <button type="button" class="btn btn-outline-success text-nowrap d-md-none me-2 px-4">Sign In</button>
-            <button type="button" class="btn btn-success text-nowrap d-md-none px-4">Sign Up</button>
+
+            @*sign in button*@
+            <button type="button" class="btn btn-outline-success text-nowrap d-md-none me-2 px-4" data-toggle="modal" data-target="#user-modal" data-url="@Url.Action("SignIn", "User")">Sign In</button>
+
+            @*sign up button*@
+            <button type="button" class="btn btn-success text-nowrap d-md-none px-4" data-toggle="modal" data-target="#user-modal" data-url="@Url.Action("SignUp", "User")">Sign Up</button>
+
 
             @*display on medium-size screens (and above)*@
-            <button type="button" class="btn btn-var-fs btn-success text-fw-bold text-nowrap d-none d-md-block px-4">Sign Up Now</button>
+
+            @*sign up button*@
+            <button type="button" class="btn btn-var-fs btn-success text-fw-bold text-nowrap d-none d-md-block px-4" data-toggle="modal" data-target="#user-modal" data-url="@Url.Action("SignUp", "User")">Sign Up Now</button>
         </div>
     </div>
 
