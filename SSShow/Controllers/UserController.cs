@@ -10,5 +10,12 @@ namespace SSShow.Controllers
             ViewData["Message"] = "Sign Up";
             return PartialView("_UserModalPartial");
         }
+
+        [HttpGet]
+        public IActionResult SignIn()
+        {
+            ViewData["Message"] = "Sign In";
+            return PartialView("_UserModalPartial");
+        }
     }
 }

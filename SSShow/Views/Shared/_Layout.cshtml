@@ -40,7 +40,7 @@
                 @*nav-buttons (Sign In and Sign Up)*@
                 <div class="navbar-buttons d-none d-md-flex" role="group" aria-label="Sign In and Sign Up buttons">
                     @*sign in button*@
-                    <button type="button" class="btn btn-outline-dark text-nowrap me-2" data-bs-toggle="modal"> Sign In </button>
+                    <button type="button" class="btn btn-outline-dark text-nowrap me-2" data-toggle="modal" data-target="#user-modal" data-url="@Url.Action("SignIn", "User")"> Sign In </button>
 
                     @*sign up button*@
                     <button type="button" class="btn btn-dark text-nowrap test" data-toggle="modal" data-target="#user-modal" data-url="@Url.Action("SignUp", "User")"> Sign Up </button>
