@@ -1,46 +1,23 @@
-﻿@*partial User modal*@
+﻿@{
+    string? httpGetMethod = ViewData["Message"]!.ToString();
+}
+
+@*partial User modal*@
 <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="user-modal-content modal-content mx-auto">
-            @*modal-header*@
-            <div class="modal-header">
-                <h3 class="modal-title text-fw-bold">User Modal</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
 
-            @*modal-body*@
-            <div class="modal-body">
-                <form>
-                    @*username*@
-                    <div class="mb-4">
-                        <label for="usernameInput" class="form-label text-fw-bold">Username</label>
-                        <input type="text" class="form-control shadow-sm textbox" id="usernameInput" aria-describedby="username input">
-                    </div>
+            @*user modal content*@
+            @if (httpGetMethod == "Sign Up")
+            {
+                <partial name="_SignUpContentPartial" />
+            }
 
-                    @*email*@
-                    <div class="mb-4">
-                        <label for="emailInput" class="form-label text-fw-bold">Email Address</label>
-                        <input type="email" class="form-control shadow-sm textbox" id="emailInput" aria-describedby="email input">
-                    </div>
+            else if (httpGetMethod == "Sign In")
+            {
 
-                    @*password*@
-                    <div class="mb-4">
-                        <label for="passwordInput" class="form-label text-fw-bold">Password</label>
-                        <input type="password" class="form-control shadow-sm textbox" id="passwordInput">
-                    </div>
+            }
 
-                    @*confirm password*@
-                    <div class="mb-4">
-                        <label for="confirmPasswordInput" class="form-label text-fw-bold">Confirm Password</label>
-                        <input type="password" class="form-control shadow-sm textbox" id="confirmPasswordInput">
-                    </div>
-                </form>
-            </div>
-
-            @*modal-footer*@
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success w-100">Sign Up</button>
-            </div>
         </div>
     </div>
 </div>
