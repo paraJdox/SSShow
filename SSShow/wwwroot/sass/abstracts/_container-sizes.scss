@@ -1,5 +1,0 @@
-﻿$container-sizes: ( small: 540px, medium: 720px, large:960px, extra-large:1140px, extra-extra-large:1320px );
-
-@function container-size($size) {
-    @return map-get($container-sizes, $size);
-}

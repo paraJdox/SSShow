@@ -1,7 +1,0 @@
-﻿@mixin screen-size($size) {
-    $screen-size: map-get($breakpoints, $size);
-
-    @media (min-width:$screen-size) {
-        @content;
-    }
-}
