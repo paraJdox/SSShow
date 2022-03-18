@@ -1,0 +1,11 @@
+﻿/*========
+  Inputs
+========*/
+
+.textbox {
+    background: color(textbox);
+
+    &:focus {
+        background: color(textbox);
+    }
+}

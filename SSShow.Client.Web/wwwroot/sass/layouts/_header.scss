@@ -1,0 +1,79 @@
+﻿/*========
+  Header
+========*/
+
+header {
+    .main-nav {
+        display: grid;
+        column-gap: 0.8em;
+        grid-template-columns: max-content auto minmax(50px,55px);
+        grid-template-areas: "logo search-bar navbar-toggler" "navbar-items navbar-items navbar-items";
+        width: 100%;
+        padding: $container-padding;
+    }
+
+    .logo {
+        grid-area: logo;
+        max-height: 25px;
+        min-width: 118px;
+        max-width: 169px;
+    }
+
+    .search-bar {
+        grid-area: search-bar;
+    }
+
+    .navbar-toggler {
+        grid-area: navbar-toggler;
+    }
+
+    .navbar-items {
+        grid-area: navbar-items;
+    }
+
+    .navbar-buttons {
+        grid-area: navbar-buttons;
+    }
+}
+
+
+
+/* Header Media Queries */
+
+@include screen-size(small) {
+    header .main-nav {
+        max-width: container-size(small);
+    }
+}
+
+@include screen-size(medium) {
+    header .main-nav {
+        //The navbar-toggler will be hidden in medium screen sizes
+        grid-template-areas: "logo navbar-items search-bar navbar-buttons";
+        grid-template-columns: max-content auto minmax(200px,300px) max-content;
+        max-width: container-size(medium);
+
+        .nav-link {
+            padding-bottom: 0; //To align all nav items to the logo (logo-full.svg)
+        }
+    }
+}
+
+@include screen-size(large) {
+    header .main-nav {
+        column-gap: 1.2em;
+        max-width: container-size(large);
+    }
+}
+
+@include screen-size(extra-large) {
+    header .main-nav {
+        max-width: container-size(extra-large);
+    }
+}
+
+@include screen-size(extra-extra-large) {
+    header .main-nav {
+        max-width: container-size(extra-extra-large);
+    }
+}

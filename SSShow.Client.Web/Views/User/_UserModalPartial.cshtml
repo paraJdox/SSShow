@@ -1,0 +1,23 @@
+﻿@{
+    string? httpGetMethod = ViewData["Message"]!.ToString();
+}
+
+@*partial User modal*@
+<div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="user-modal-content modal-content mx-auto">
+
+            @*user modal content*@
+            @if (httpGetMethod == "Sign Up")
+            {
+                <partial name="_SignUpContentPartial" />
+            }
+
+            else if (httpGetMethod == "Sign In")
+            {
+                <partial name="_SignInContentPartial" />
+            }
+
+        </div>
+    </div>
+</div>
