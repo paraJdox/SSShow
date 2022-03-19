@@ -1,7 +1,7 @@
 ﻿$(document).ready(() => {
     $('button[data-toggle="modal"]').click(function () {
         createModalContainer();
-        displayModal(this, $('#modal-container'));
+        displayModalInModalContainer(this, $('#modal-container'));
     });
 
     function createModalContainer() {
@@ -16,11 +16,11 @@
         }
     }
 
-    function displayModal(modalToggleButton, modalContainer) {
+    function displayModalInModalContainer(modalToggleButton, modalContainer) {
         let url = $(modalToggleButton).data('url');
         let decodedUrl = decodeURIComponent(url);
 
-        // ajax get request to show the modal in its container
+        // ajax get request to show the modal IN its container
         $.get(decodedUrl).done((data) => {
             modalContainer.html(data);
             modalContainer.find('.modal').modal('show');
