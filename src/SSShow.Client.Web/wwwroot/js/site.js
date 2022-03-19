@@ -1,12 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-$(document).ready(() => {
-    /*==================
-      MODAL OPERATIONS
-    ==================*/
+﻿$(document).ready(() => {
     $('button[data-toggle="modal"]').click(function () {
         // modal area creation (we display the modal in this area)
         let modalArea = document.createElement("div");
@@ -25,11 +17,10 @@ $(document).ready(() => {
         let url = $(this).data('url');
         let decodedUrl = decodeURIComponent(url);
 
-        // ajax get request
+        // ajax get request to show the selected modal
         $.get(decodedUrl).done((data) => {
             newModal.html(data);
             newModal.find('.modal').modal('show');
         });
     });
-
 });
