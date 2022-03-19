@@ -11,16 +11,20 @@
         }
 
         // select the modal area
-        let newModal = $('#modal-area');
+        let modalToDisplay = $('#modal-area');
 
-        /*= DISPLAY MODAL =*/
-        let url = $(this).data('url');
+        displayModal(this, modalToDisplay);
+    });
+
+    function displayModal(modalToggleButton, modalToDisplay) {
+        let url = $(modalToggleButton).data('url');
         let decodedUrl = decodeURIComponent(url);
 
         // ajax get request to show the selected modal
         $.get(decodedUrl).done((data) => {
-            newModal.html(data);
-            newModal.find('.modal').modal('show');
+            modalToDisplay.html(data);
+            modalToDisplay.find('.modal').modal('show');
         });
-    });
+    }
 });
+
