@@ -1,29 +1,29 @@
 ﻿$(document).ready(() => {
     $('button[data-toggle="modal"]').click(function () {
-        // modal area creation (we display the modal in this area)
-        let modalArea = document.createElement("div");
-        modalArea.id = "modal-area";
-
-        // add the modal (ONCE) in the <main> page content so we can "select" it
-        if ($('#modal-area').length <= 0) {
-            let mainPageContent = $('main');
-            mainPageContent.prepend(modalArea);
-        }
-
-        // select the modal area
-        let modalToDisplay = $('#modal-area');
-
-        displayModal(this, modalToDisplay);
+        createModalContainer();
+        displayModal(this, $('#modal-container'));
     });
 
-    function displayModal(modalToggleButton, modalToDisplay) {
+    function createModalContainer() {
+        // modal container creation (we display the modal in this container)
+        let modalContainer = document.createElement("div");
+        modalContainer.id = "modal-container";
+
+        // add the modal's container (ONCE) in the <main> page's content so we can "select" it
+        if ($('#modal-container').length <= 0) {
+            let mainPageContent = $('main');
+            mainPageContent.prepend(modalContainer);
+        }
+    }
+
+    function displayModal(modalToggleButton, modalContainer) {
         let url = $(modalToggleButton).data('url');
         let decodedUrl = decodeURIComponent(url);
 
-        // ajax get request to show the selected modal
+        // ajax get request to show the modal in its container
         $.get(decodedUrl).done((data) => {
-            modalToDisplay.html(data);
-            modalToDisplay.find('.modal').modal('show');
+            modalContainer.html(data);
+            modalContainer.find('.modal').modal('show');
         });
     }
 });
