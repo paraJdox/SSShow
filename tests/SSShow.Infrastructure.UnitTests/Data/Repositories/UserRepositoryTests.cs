@@ -29,7 +29,7 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
         public async Task CreateAsync_ShouldReturnUserObjectInTheArgument_IfUserIsNotNull()
         {
             // Arrange
-            var newUser = new User
+            var userWithFullySetProperties = new User
             {
                 Id = new Random().Next(1, int.MaxValue),
                 Username = "Test UserName",
@@ -37,11 +37,34 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
                 Email = "test@email.com",
             };
 
+            var userWithIncompleteSetProperties = new User
+            {
+                Id = new Random().Next(1, int.MaxValue),
+                Username = null!,
+                Password = "TestPassword",
+                Email = null!,
+            };
+
+            var userWithNoSetProperties = new User();
+
+            User noUser = null!;
+
+
             // Act
-            var user = await _sut.CreateAsync(newUser);
+            var userWithRequiredProperties = await _sut.CreateAsync(userWithFullySetProperties);
+
+            var userWithIncompleteRequiredProperties = await _sut.CreateAsync(userWithIncompleteSetProperties);
+
+            var userWithNoRequiredProperties = await _sut.CreateAsync(userWithNoSetProperties);
+
+            var nullUser = await _sut.CreateAsync(noUser);
+
 
             // Assert
-            Assert.True(user != null);
+            Assert.NotNull(userWithRequiredProperties);
+            Assert.Null(userWithIncompleteRequiredProperties);
+            Assert.Null(userWithNoRequiredProperties);
+            Assert.Null(nullUser);
         }
     }
 }
