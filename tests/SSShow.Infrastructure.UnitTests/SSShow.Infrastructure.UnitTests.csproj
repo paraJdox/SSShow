@@ -21,6 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\src\SSShow.Core\SSShow.Core.csproj" />
 		<ProjectReference Include="..\..\src\SSShow.Infrastructure\SSShow.Infrastructure.csproj" />
 	</ItemGroup>
 
