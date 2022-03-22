@@ -1,4 +1,6 @@
-﻿using SSShow.Core.Data.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SSShow.Core.Data.Entities;
+using SSShow.Infrastructure.Data.Contexts;
 using SSShow.Infrastructure.Data.Repositories;
 using System;
 using System.Collections.Generic;
@@ -12,10 +14,15 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
     public class UserRepositoryTests
     {
         private readonly UserRepository _sut;
+        private readonly AppMainContext _context;
 
         public UserRepositoryTests()
         {
-            _sut = new UserRepository();
+            var options = new DbContextOptionsBuilder<AppMainContext>()
+                             .UseInMemoryDatabase(Guid.NewGuid().ToString())
+                             .Options;
+            _context = new AppMainContext(options);
+            _sut = new UserRepository(_context);
         }
 
         [Fact]
