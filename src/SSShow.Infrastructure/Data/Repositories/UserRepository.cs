@@ -5,14 +5,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SSShow.Infrastructure.Data.Contexts;
 
 namespace SSShow.Infrastructure.Data.Repositories
 {
     internal class UserRepository : IUserRepository
     {
-        public Task<User> CreateAsync(User user)
+        private readonly AppMainContext _context;
+
+        public UserRepository(AppMainContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+
+        public async Task<User> CreateAsync(User user)
+        {
+            if (user == null) { return null!; }
+
+            _context.User.Add(user);
+
+            await _context.SaveChangesAsync();
+            return user;
         }
 
         public Task<IEnumerable<User>> GetAllAsync()
