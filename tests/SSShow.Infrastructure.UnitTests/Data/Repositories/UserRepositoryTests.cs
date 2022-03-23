@@ -13,7 +13,6 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
 {
     public class UserRepositoryTests
     {
-        private readonly UserRepository _sut;
         private readonly AppMainContext _context;
 
         public UserRepositoryTests()
@@ -21,15 +20,17 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
             var options = new DbContextOptionsBuilder<AppMainContext>()
                              .UseInMemoryDatabase(Guid.NewGuid().ToString())
                              .Options;
+
             _context = new AppMainContext(options);
-            _sut = new UserRepository(_context);
         }
 
         [Fact]
         public async Task CreateAsync_ShouldReturnUserObjectInTheArgument_IfUserIsNotNull()
         {
             // Arrange
-            var userWithFullySetProperties = new User
+            var sut = new UserRepository(_context);
+
+            var fullySetUser = new User
             {
                 Id = new Random().Next(1, int.MaxValue),
                 Username = "Test UserName",
@@ -37,7 +38,7 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
                 Email = "test@email.com",
             };
 
-            var userWithIncompleteSetProperties = new User
+            var partiallySetUser = new User
             {
                 Id = new Random().Next(1, int.MaxValue),
                 Username = null!,
@@ -45,19 +46,19 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
                 Email = null!,
             };
 
-            var userWithNoSetProperties = new User();
+            var unsetUser = new User();
 
             User noUser = null!;
 
 
             // Act
-            var userWithRequiredProperties = await _sut.CreateAsync(userWithFullySetProperties);
+            var userWithRequiredProperties = await sut.CreateAsync(fullySetUser);
 
-            var userWithIncompleteRequiredProperties = await _sut.CreateAsync(userWithIncompleteSetProperties);
+            var userWithIncompleteRequiredProperties = await sut.CreateAsync(partiallySetUser);
 
-            var userWithNoRequiredProperties = await _sut.CreateAsync(userWithNoSetProperties);
+            var userWithNoRequiredProperties = await sut.CreateAsync(unsetUser);
 
-            var nullUser = await _sut.CreateAsync(noUser);
+            var nullUser = await sut.CreateAsync(noUser);
 
 
             // Assert
