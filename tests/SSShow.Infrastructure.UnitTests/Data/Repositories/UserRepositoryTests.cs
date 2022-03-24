@@ -41,9 +41,7 @@ namespace SSShow.Infrastructure.UnitTests.Data.Repositories
             var partiallySetUser = new User
             {
                 Id = new Random().Next(1, int.MaxValue),
-                Username = null!,
                 Password = "TestPassword",
-                Email = null!,
             };
 
             var unsetUser = new User();
