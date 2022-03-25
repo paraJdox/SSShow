@@ -22,12 +22,6 @@ namespace SSShow.Infrastructure.Data.Repositories
         {
             if (user == null) { return null!; }
 
-            bool userHasRequiredProperties = user.Username != null &&
-                                             user.Email != null &&
-                                             user.Password != null;
-
-            if (!userHasRequiredProperties) { return null!; }
-
             _context.User.Add(user);
             await _context.SaveChangesAsync();
             return user;
